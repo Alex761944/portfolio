@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -15,12 +21,6 @@ body {
 
 .PageContent {
   min-height: 100vh;
-  margin-bottom: -75px;
-}
-
-.PageContent::after {
-  content: "";
-  display: block;
 }
 
 .Section {
@@ -40,6 +40,9 @@ body {
   align-items: center;
   gap: 16px;
   width: 100%;
+  height: 72px;
+  position: sticky;
+  top: 0;
   padding: 16px 0px;
   border-bottom: 1px solid white;
   background-color: #020024;
@@ -49,6 +52,20 @@ body {
     rgba(0, 0, 105, 1) 60%,
     rgba(0, 212, 255, 1) 100%
   );
+}
+
+.SiteHeader__Logo {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  flex: 0 0 auto;
+}
+
+.SiteHeader__LogoImage {
+  height: 48px;
+  width: auto;
+  display: block;
 }
 
 .SiteHeader__NavigationList {
