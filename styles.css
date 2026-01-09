@@ -4,12 +4,29 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  pointer-events: none;
+}
+
+p {
+  margin: 0;
+  pointer-events: none;
+}
+
 body {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   margin: 0;
   background-color: #434343;
   background: linear-gradient(to right, #434343, #000000);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
 }
 
@@ -17,10 +34,6 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.PageContent {
-  min-height: 100vh;
 }
 
 .Section {
@@ -57,31 +70,40 @@ body {
 .SiteHeader__Logo {
   display: flex;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  flex: 0 0 auto;
 }
 
 .SiteHeader__LogoImage {
-  height: 48px;
-  width: auto;
-  display: block;
+  height: 56px;
 }
 
 .SiteHeader__NavigationList {
   display: flex;
-  justify-content: space-around;
-  gap: 16px;
+  justify-content: center;
+  gap: 24px;
   width: 100%;
 }
 
-.Link {
+.NavigationList__Item {
   color: white;
   text-decoration: none;
   transition: 0.5s;
   font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 4px;
+  padding: 4px 4px;
 }
 
-.Link:hover {
+.NavigationList__Item--Active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
+.NavigationList__Item:hover {
   color: rgb(255, 179, 39);
+}
+
+.MainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
