@@ -36,6 +36,25 @@ body {
   padding: 0;
 }
 
+.Button {
+  padding: 16px 32px;
+  border-radius: 16px;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(54, 54, 255);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.5s;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  user-select: none;
+}
+
+.Button:hover {
+  background-color: rgb(0, 0, 247);
+}
+
 .Section {
   padding: 24px 0;
   max-width: 1200px;
@@ -106,4 +125,36 @@ body {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.Selection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.Selection__Grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.SelectionCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.SelectionCard__Image {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid white;
+}
+
+.SelectionCard__ImageInner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
