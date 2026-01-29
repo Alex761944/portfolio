@@ -162,5 +162,6 @@ body {
 .ProjectsGrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(260px, 1fr));
+  padding: (var(--spacing-m));
   gap: 16px;
 }
