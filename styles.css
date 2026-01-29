@@ -37,11 +37,7 @@ body {
 }
 
 .Button {
-  padding: 16px 32px;
-  border-radius: 16px;
   cursor: pointer;
-  color: white;
-  background-color: rgb(54, 54, 255);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: 0.5s;
   font-size: 16px;
@@ -51,14 +47,31 @@ body {
   user-select: none;
 }
 
-.Button:hover {
+.Button--Selection {
+  color: white;
+  background-color: rgb(54, 54, 255);
+  padding: 16px 16px;
+  border-radius: 16px;
+}
+
+.Button--ProjectCard {
+  font-family: monospace;
+  padding: 8px;
+  color: rgb(133, 133, 133);
+  background-color: rgba(0, 82, 150, 0.589);
+}
+
+.Button--Selection:hover {
   background-color: rgb(0, 0, 247);
+}
+
+.MainContent {
+  padding: 16px 24px;
 }
 
 .Section {
   padding: 24px 48px;
   max-width: 1200px;
-  margin: 0 auto;
 }
 
 .Section--Vertical {
@@ -162,6 +175,11 @@ body {
 .ProjectsGrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(260px, 1fr));
-  padding: (var(--spacing-m));
   gap: 16px;
+}
+
+.Presentation {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-s);
 }
