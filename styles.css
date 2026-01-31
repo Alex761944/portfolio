@@ -56,7 +56,7 @@ body {
 
 .Button--ProjectCard {
   font-family: monospace;
-  padding: 8px;
+  padding: var(--spacing-s);
   color: rgb(133, 133, 133);
   background-color: rgba(0, 82, 150, 0.589);
 }
@@ -67,30 +67,30 @@ body {
 
 .MainContent {
   flex-grow: 1;
-  padding: 16px 24px;
+  padding: var(--spacing-m) var(--spacing-l);
 }
 
 .Section {
-  padding: 24px 0px;
+  padding: var(--spacing-l) 0px;
   max-width: 1200px;
 }
 
 .Section--Vertical {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: var(--spacing-m);
 }
 
 .SiteHeader {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: var(--spacing-m);
   width: 100%;
   height: 72px;
   position: sticky;
   top: 0;
-  padding: 16px 0px;
-  border-bottom: 1px solid white;
+  padding: var(--spacing-m) 0px;
+  border-bottom: var(--border-width) solid white;
   background-color: #020024;
   background: linear-gradient(
     75deg,
@@ -112,7 +112,7 @@ body {
 .SiteHeader__NavigationList {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: var(--spacing-l);
   width: 100%;
 }
 
@@ -121,13 +121,13 @@ body {
   text-decoration: none;
   transition: 0.5s;
   font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 4px;
-  padding: 4px 4px;
+  letter-spacing: var(--spacing-xs);
+  padding: var(--spacing-xs);
 }
 
 .NavigationList__Item--Active {
   text-decoration: underline;
-  text-underline-offset: 4px;
+  text-underline-offset: var(--spacing-xs);
   text-decoration-thickness: 2px;
 }
 
@@ -138,33 +138,33 @@ body {
 .MainContent {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: var(--spacing-s);
 }
 
 .Selection {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: var(--spacing-m);
 }
 
 .Selection__Grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(260px, 1fr));
-  gap: 16px;
+  gap: var(--spacing-m);
 }
 
 .SelectionCard {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: var(--spacing-l);
 }
 
 .SelectionCard__Image {
   aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: 12px;
-  border: 1px solid white;
+  border: var(--border-width) solid white;
 }
 
 .SelectionCard__ImageInner {
@@ -176,7 +176,7 @@ body {
 .ProjectsGrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(260px, 1fr));
-  gap: 16px;
+  gap: var(--spacing-m);
 }
 
 .Presentation {
